@@ -82,7 +82,7 @@ cd qeats
 Update `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/your_db
+spring.datasource.url=jdbc:postgresql://localhost:5432/qeats_db
 spring.datasource.username=postgres
 spring.datasource.password=your_password
 ```
