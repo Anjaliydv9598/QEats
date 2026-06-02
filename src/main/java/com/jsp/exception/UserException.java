@@ -1,4 +1,5 @@
 package com.jsp.exception;
 
-public class UserException {
+public class UserException extends Exception{
+    super(message);
 }

@@ -8,10 +8,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LoginResponse {
-    private String token;
-    private String message;
-    private Integer userId;
+
+    private Integer user_id;
     private String email;
     private String name;
-    private String role;
+    private Long phone;
 }
