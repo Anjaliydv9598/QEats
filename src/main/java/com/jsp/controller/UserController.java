@@ -1,14 +1,12 @@
 package com.jsp.controller;
 
 import com.jsp.dto.UserResponse;
-import com.jsp.entity.User;
+import com.jsp.model.User;
 import com.jsp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/qeats/user")

@@ -1,4 +1,4 @@
-package com.jsp.entity;
+package com.jsp.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

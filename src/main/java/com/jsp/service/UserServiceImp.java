@@ -3,15 +3,10 @@ package com.jsp.service;
 import com.jsp.dto.LoginRequest;
 import com.jsp.dto.UserRequest;
 import com.jsp.dto.UserResponse;
-import com.jsp.entity.User;
+import com.jsp.model.User;
 import com.jsp.dao.UserRepository;
-import com.jsp.model.Role;
 import jdk.jshell.spi.ExecutionControl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
-import java.util.Optional;
 
 
 public class UserServiceImp implements UserService {
@@ -35,7 +30,7 @@ public class UserServiceImp implements UserService {
         user.setPhone(userRequest.getPhone());
         user.setPassword(userRequest.getPassword());
 
-        user.setRole(Role.CUSTOMER);
+        user.setRole(User.Role.CUSTOMER);
 
 //        SAVE TO DATABASE
         user savedUser=userRepository.save(user);
@@ -51,7 +46,8 @@ public class UserServiceImp implements UserService {
         return null;
     }
 
-    @Overridepublic UserResponse profile(String id){
+    @Override
+    public UserResponse profile(String id){
         return null;
     }
 

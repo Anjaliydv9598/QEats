@@ -1,6 +1,6 @@
 package com.jsp.dao;
 
-import com.jsp.entity.User;
+import com.jsp.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
