@@ -23,8 +23,8 @@ public class UserServiceImp implements UserService {
     @Override
     public UserResponse register(UserRequest userRequest) {
 
-        if(userRepository.existsByEmail(UserRequest.getEmail())){
-            throw new UserException("email id already exists");
+        if(userRepository.existsByEmail(userRequest.getEmail())){
+            throw new UserException("Email already exists");
         }
         User user = new User();
         user.setEmail(userRequest.getEmail());
