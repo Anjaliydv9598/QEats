@@ -3,12 +3,14 @@ package com.jsp.service;
 import com.jsp.dto.LoginRequest;
 import com.jsp.dto.UserRequest;
 import com.jsp.dto.UserResponse;
+import com.jsp.exception.UserException;
+import com.jsp.model.Role;
 import com.jsp.model.User;
 import com.jsp.dao.UserRepository;
-import jdk.jshell.spi.ExecutionControl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class UserServiceImp implements UserService {
 
     private final UserRepository userRepository;
@@ -22,7 +24,7 @@ public class UserServiceImp implements UserService {
     public UserResponse register(UserRequest userRequest) {
 
         if(userRepository.existsByEmail(UserRequest.getEmail())){
-            throw new ExecutionControl.UserException("email id already exists");
+            throw new UserException("email id already exists");
         }
         User user = new User();
         user.setEmail(userRequest.getEmail());
@@ -30,12 +32,12 @@ public class UserServiceImp implements UserService {
         user.setPhone(userRequest.getPhone());
         user.setPassword(userRequest.getPassword());
 
-        user.setRole(User.Role.CUSTOMER);
+        user.setRole(Role.CUSTOMER);
 
 //        SAVE TO DATABASE
-        user savedUser=userRepository.save(user);
+        User savedUser=userRepository.save(user);
 //        STORE IN USER RESPONSE
-        UserResponse userResponse=new UserResponse(user);
+        UserResponse response=new UserResponse(user);
 
         return response;
 

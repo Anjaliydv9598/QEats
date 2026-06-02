@@ -1,6 +1,7 @@
 package com.jsp.controller;
 
 import com.jsp.dto.LoginRequest;
+import com.jsp.dto.UserRequest;
 import com.jsp.dto.UserResponse;
 import com.jsp.model.User;
 import com.jsp.service.UserService;
@@ -24,7 +25,7 @@ public class UserController {
     public ResponseEntity<UserResponse> registerUser(@RequestBody UserRequest userRequest){
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(userService.register(userRequest);
+                .body(userService.register(userRequest));
     }
 
     @PostMapping("/register")
