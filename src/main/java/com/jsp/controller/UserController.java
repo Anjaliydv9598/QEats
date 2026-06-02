@@ -20,14 +20,14 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public RepositoryEntity<UserResponse> registerUser(@RequestBody User user){
+    public ResponseEntity<UserResponse> registerUser(@RequestBody User user){
         return ResponseEntity
                 .status(HttpStatus.CREATED)
-                .body(userService.register(user));
+                .body(userService.register(user);
     }
 
     @PostMapping("/register")
-    public RepositoryEntity<UserResponse> login(@RequestBody User user){
+    public ResponseEntity<UserResponse> login(@RequestBody User user){
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(userService.login(userRequest));
