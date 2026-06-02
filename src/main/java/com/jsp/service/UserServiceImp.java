@@ -51,6 +51,10 @@ public class UserServiceImp implements UserService {
         return null;
     }
 
+    @Overridepublic UserResponse profile(String id){
+        return null;
+    }
+
 
 
 
