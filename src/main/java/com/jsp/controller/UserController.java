@@ -2,6 +2,7 @@ package com.jsp.controller;
 
 import com.jsp.entity.User;
 import com.jsp.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 
+    @Autowired
      UserService userService;
 
 //     Constructor Injection

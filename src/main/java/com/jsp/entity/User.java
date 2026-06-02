@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name="users")
+@Table(name="user_table")
+@SequenceGenerator(name="user-seq" , allocationSize =1,initialValue=1000)
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,12 +16,15 @@ import lombok.Setter;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
     private String name;
+    @Column(unique = true)
     private String email;
-    private String password;
+    private Long phone;
+    @Enumerated(EnumType.STRING)
     private String role;
+    private String password;
 
 
 
