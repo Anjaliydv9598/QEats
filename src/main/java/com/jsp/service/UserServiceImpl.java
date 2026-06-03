@@ -7,9 +7,10 @@ import com.jsp.dto.UserResponse;
 import com.jsp.exception.UserException;
 import com.jsp.model.Role;
 import com.jsp.model.User;
-import com.jsp.service.UserService;
+import com.jsp.resturant_module.dto.ResturantRequest;
+import com.jsp.resturant_module.model.Resturant;
+import com.jsp.resturant_module.model.service.ResturantService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -104,4 +105,11 @@ public class UserServiceImpl implements UserService {
         return response;
     }
 
+    public static class ResturantServiceImpl implements ResturantService {
+
+    @Override
+        public Resturant createResutrant(ResturantRequest resturantRequest){
+
+    }
+    }
 }
