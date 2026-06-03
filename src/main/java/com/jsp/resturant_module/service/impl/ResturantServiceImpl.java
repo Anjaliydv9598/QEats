@@ -19,7 +19,7 @@ public class ResturantServiceImpl implements ResturantService {
 
         Integer managerId=resturantRequest.getUser_id();
 
-        User user==userRepository.findById(managerId)
+        User user=userRepository.findById(managerId)
                 .orElseThrow(()->new UserException("user not found"));
 
         Resturant resturant=new Resturant();
@@ -27,7 +27,7 @@ public class ResturantServiceImpl implements ResturantService {
         resturant.setPhone(resturant.getPhone());
         resturant.setAddress(resturant.getAddress());
         resturant.setPincode(resturantRequest.getPincode());
-        resturant.setImage(rseturant.getImage());
+        resturant.setImage(resturant.getImage());
 
 
         resturant.setManager(user);
