@@ -8,17 +8,17 @@ import com.jsp.exception.UserException;
 import com.jsp.model.Role;
 import com.jsp.model.User;
 import com.jsp.service.UserService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    @Autowired
-    public UserServiceImpl(UserRepository userRepository){
-        this.userRepository=userRepository;
-    }
 
     @Override
     public UserResponse register(UserRequest userRequest) {
