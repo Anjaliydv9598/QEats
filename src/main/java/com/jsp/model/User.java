@@ -1,5 +1,6 @@
 package com.jsp.model;
 
+import com.jsp.resturant_module.model.Resturant;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,7 +26,10 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
     private String password;
+    private boolean active;
 
+    @OneToOne(mappedBy="manager")
+    private Resturant resturant;
 
 
 }
