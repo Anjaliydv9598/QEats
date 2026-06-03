@@ -1,4 +1,4 @@
-package com.jsp.dao;
+package com.jsp.resturant_module.dao;
 
 import com.jsp.resturant_module.model.Resturant;
 import org.springframework.data.jpa.repository.JpaRepository;

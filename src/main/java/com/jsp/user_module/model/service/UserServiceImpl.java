@@ -1,12 +1,12 @@
-package com.jsp.service;
+package com.jsp.user_module.model.service;
 
-import com.jsp.dao.UserRepository;
-import com.jsp.dto.LoginRequest;
-import com.jsp.dto.UserRequest;
-import com.jsp.dto.UserResponse;
-import com.jsp.exception.UserException;
-import com.jsp.model.Role;
-import com.jsp.model.User;
+import com.jsp.user_module.model.dao.UserRepository;
+import com.jsp.user_module.model.dto.LoginRequest;
+import com.jsp.user_module.model.dto.UserRequest;
+import com.jsp.user_module.model.dto.UserResponse;
+import com.jsp.user_module.model.exception.UserException;
+import com.jsp.user_module.model.Role;
+import com.jsp.user_module.model.User;
 import com.jsp.resturant_module.dto.ResturantRequest;
 import com.jsp.resturant_module.model.Resturant;
 import com.jsp.resturant_module.model.service.ResturantService;

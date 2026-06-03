@@ -1,10 +1,10 @@
-package com.jsp.controller;
+package com.jsp.user_module.model.controller;
 
 
-import com.jsp.dto.LoginRequest;
-import com.jsp.dto.UserRequest;
-import com.jsp.dto.UserResponse;
-import com.jsp.service.UserService;
+import com.jsp.user_module.model.dto.LoginRequest;
+import com.jsp.user_module.model.dto.UserRequest;
+import com.jsp.user_module.model.dto.UserResponse;
+import com.jsp.user_module.model.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

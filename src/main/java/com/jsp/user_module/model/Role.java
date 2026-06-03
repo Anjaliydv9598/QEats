@@ -1,4 +1,4 @@
-package com.jsp.model;
+package com.jsp.user_module.model;
 
 public enum Role {
 

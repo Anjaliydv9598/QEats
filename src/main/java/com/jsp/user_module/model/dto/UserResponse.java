@@ -1,4 +1,4 @@
-package com.jsp.dto;
+package com.jsp.user_module.model.dto;
 
 
 import lombok.Data;

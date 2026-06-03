@@ -1,8 +1,8 @@
-package com.jsp.service;
+package com.jsp.user_module.model.service;
 
-import com.jsp.dto.LoginRequest;
-import com.jsp.dto.UserRequest;
-import com.jsp.dto.UserResponse;
+import com.jsp.user_module.model.dto.LoginRequest;
+import com.jsp.user_module.model.dto.UserRequest;
+import com.jsp.user_module.model.dto.UserResponse;
 import org.springframework.stereotype.Service;
 
 @Service

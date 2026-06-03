@@ -1,4 +1,4 @@
-package com.jsp.exception;
+package com.jsp.user_module.model.exception;
 
 import lombok.Getter;
 import lombok.Setter;

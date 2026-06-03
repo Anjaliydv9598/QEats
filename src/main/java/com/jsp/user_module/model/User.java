@@ -1,4 +1,4 @@
-package com.jsp.model;
+package com.jsp.user_module.model;
 
 import com.jsp.resturant_module.model.Resturant;
 import jakarta.persistence.*;
@@ -28,7 +28,7 @@ public class User {
     private String password;
     private boolean active;
 
-    @OneToOne(mappedBy="manager")
+    @OneToOne(mappedBy="manager" , cascade = CascadeType.ALL)
     private Resturant resturant;
 
 

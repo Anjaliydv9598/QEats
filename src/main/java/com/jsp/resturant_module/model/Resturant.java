@@ -1,7 +1,7 @@
 package com.jsp.resturant_module.model;
 
 
-import com.jsp.model.User;
+import com.jsp.user_module.model.User;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;

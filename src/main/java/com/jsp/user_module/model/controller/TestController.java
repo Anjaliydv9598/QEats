@@ -1,4 +1,4 @@
-package com.jsp.controller;
+package com.jsp.user_module.model.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
