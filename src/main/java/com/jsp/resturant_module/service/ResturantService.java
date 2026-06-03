@@ -10,21 +10,9 @@ import org.springframework.stereotype.Service;
 public interface ResturantService {
 
     ResturantResponse createResturant(ResturantRequest resturantRequest);
-    ResturantResponse
-
-
-
-
-
-
-
-//    UserResponse register(UserRequest user);
-//    UserResponse login(LoginRequest login);
-//    UserResponse profile(Integer id);
-//    void deleteUser(Integer id);
-//    UserResponse changePassword(String email, String oldPassword, String newPassword);
-
-
+    ResturantResponse getResturantById(Integer id);
+    ResturantResponse updateResturant(Integer id, ResturantRequest resturantRequest);
+    void deleteResturant(Integer id);
 
 
 
